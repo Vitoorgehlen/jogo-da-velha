@@ -16,9 +16,9 @@
   </head>
   <body>
     <header>
-      <h1>Player 1</h1>
-      <h1>0 - 0</h1>
-      <h1>Player 2</h1>
+      <h1 class="player1" contenteditable="true">Player 1</h1>
+      <h1><span id="scoreP1">0</span> - <span id="scoreP2">0</span></h1>
+      <h1 class="player2" contenteditable="true">Player 2</h1>
     </header>
     <main>
       <section id="game">
@@ -37,11 +37,15 @@
           <div id="seven" class="square"></div>
           <div id="eight" class="square"></div>
         </div>
-        <button id="restart">Recomeçar</button>
+        <div id="strike"></div>
+        <div id="strike-diagonal"></div>
       </section>
+      <button class="player1" id="restart">
+        Recomeçar <i class="fa-solid fa-rotate"></i>
+      </button>
     </main>
     <footer>
-      <h1>Feito com 🥰 por Vitor Gehlen</h1>
+      <p>Feito com 🥰 por Vitor Gehlen</p>
     </footer>
     <script src="index.js"></script>
     <script

@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 100svh;
+
+  background-color: #191919;
+  color: #fcfcff;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  width: 100%;
+  margin-top: 1rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.player1 {
+  color: #ff4a4a;
+}
+
+.player2 {
+  color: #319ffb;
+}
+
+#game {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.square {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 8rem;
+  width: 8rem;
+
+  background-color: #ffffff;
+  color: #191919;
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.row {
+  display: flex;
+  gap: 0.5rem;
+}
+
+#strike {
+  pointer-events: none;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+
+  width: 28rem;
+  height: 0.5rem;
+  filter: drop-shadow(0 0 0.5rem #000000);
+  border-radius: 3rem;
+}
+
+#strike-diagonal {
+  pointer-events: none;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+
+  width: 38rem;
+  height: 0.5rem;
+  filter: drop-shadow(0 0 0.5rem #000000);
+  border-radius: 3rem;
+}
+
+#strike.one-vertical {
+  opacity: 1;
+  transform: rotate(90deg) translateY(8.25rem);
+}
+#strike.two-vertical {
+  opacity: 1;
+  transform: rotate(90deg);
+}
+#strike.three-vertical {
+  opacity: 1;
+  transform: rotate(90deg) translateY(-8.25rem);
+}
+#strike.one-horizontal {
+  opacity: 1;
+  transform: translateY(-8.5rem);
+}
+#strike.two-horizontal {
+  opacity: 1;
+}
+#strike.three-horizontal {
+  opacity: 1;
+  transform: translateY(8.5rem);
+}
+
+#strike-diagonal.one-diagonal {
+  opacity: 1;
+  transform: rotate(45deg);
+}
+#strike-diagonal.two-diagonal {
+  opacity: 1;
+  transform: rotate(-45deg);
+}
+#strike-diagonal.player1 {
+  background-color: #ff4a4a;
+}
+#strike-diagonal.player2 {
+  background-color: #319ffb;
+}
+#strike.player1 {
+  background-color: #ff4a4a;
+}
+#strike.player2 {
+  background-color: #319ffb;
+}
+
+#restart {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+
+  margin-top: 3rem;
+  padding: 1rem 3rem;
+
+  border: none;
+  border-radius: 20rem;
+  color: #ffffff;
+  transition: all 0.2s;
+}
+
+#restart.player1 {
+  background-color: #ff4a4a;
+}
+#restart.player2 {
+  background-color: #319ffb;
+}
+
+#restart:hover {
+  filter: drop-shadow(0 0 0.5rem #000000);
+}
+
+footer {
+  margin-bottom: 1rem;
+}
