@@ -21,6 +21,7 @@ const scorePlayer1 = document.getElementById("scoreP1");
 const scorePlayer2 = document.getElementById("scoreP2");
 const strikeVerHor = document.getElementById("strike");
 const strikeDiagonal = document.getElementById("strike-diagonal");
+const robot = document.getElementById("robot");
 
 let values = [0, 0, 0, 0, 0, 0, 0, 0, 0];
 let currentPlayer = 1;
@@ -30,6 +31,7 @@ let player1Wins = 0;
 let player2Wins = 0;
 let playerOnePiece = '<i class="player1 fa-solid fa-x"></i>';
 let playerTwoPiece = '<i class="player2 fa-solid fa-o"></i>';
+let isCPU = false;
 
 function placeOnBoard(index, element) {
   if (!isGameOver) {
@@ -39,6 +41,56 @@ function placeOnBoard(index, element) {
       winningMoves();
       scoreWinner();
       changePlayer();
+
+      if (!values.includes(0)) {
+        isGameOver = true;
+      } else {
+        setTimeout(() => {
+          if (isCPU) {
+            robotMove();
+          }
+        }, 250);
+      }
+    }
+  }
+}
+
+function robotMove() {
+  if (currentPlayer === 2) {
+    let position = Math.round(Math.random() * 8);
+    while (values[position] !== 0) {
+      position = Math.round(Math.random() * 8);
+    }
+    switch (position) {
+      case 0:
+        placeOnBoard(position, squareZero);
+        break;
+      case 1:
+        placeOnBoard(position, squareOne);
+        break;
+      case 2:
+        placeOnBoard(position, squareTwo);
+        break;
+      case 3:
+        placeOnBoard(position, squareThree);
+        break;
+      case 4:
+        placeOnBoard(position, squareFour);
+        break;
+      case 5:
+        placeOnBoard(position, squareFive);
+        break;
+      case 6:
+        placeOnBoard(position, squareSix);
+        break;
+      case 7:
+        placeOnBoard(position, squareSeven);
+        break;
+      case 8:
+        placeOnBoard(position, squareEight);
+        break;
+      default:
+        break;
     }
   }
 }
@@ -158,4 +210,15 @@ squareEight.addEventListener("click", () => {
 });
 resetButton.addEventListener("click", () => {
   resetGame();
+});
+robot.addEventListener("click", () => {
+  isCPU = !isCPU;
+  if (isCPU) {
+    robot.classList.add("active");
+  } else {
+    robot.classList.remove("active");
+  }
+  if (currentPlayer === 2) {
+    robotMove();
+  }
 });

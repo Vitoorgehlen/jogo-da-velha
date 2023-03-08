@@ -16,9 +16,13 @@
   </head>
   <body>
     <header>
-      <h1 class="player1" contenteditable="true">Player 1</h1>
+      <h1 class="player1" contenteditable="true">
+        Player 1 <i class="fa-solid fa-pencil"></i>
+      </h1>
       <h1><span id="scoreP1">0</span> - <span id="scoreP2">0</span></h1>
-      <h1 class="player2" contenteditable="true">Player 2</h1>
+      <h1 class="player2" contenteditable="true">
+        Player 2 <i class="fa-solid fa-pencil"></i>
+      </h1>
     </header>
     <main>
       <section id="game">
@@ -40,9 +44,12 @@
         <div id="strike"></div>
         <div id="strike-diagonal"></div>
       </section>
-      <button class="player1" id="restart">
-        Recomeçar <i class="fa-solid fa-rotate"></i>
-      </button>
+      <div class="options">
+        <button class="player1" id="restart">
+          Recomeçar <i class="fa-solid fa-rotate"></i>
+        </button>
+        <i id="robot" class="fa-solid fa-robot"></i>
+      </div>
     </main>
     <footer>
       <p>Feito com 🥰 por Vitor Gehlen</p>
