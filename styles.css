@@ -15,7 +15,7 @@ body {
 
   height: 100svh;
 
-  background-color: #191919;
+  background-color: #1b1a1f;
   color: #fcfcff;
 }
 
@@ -23,9 +23,12 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  padding: 1rem;
 
-  width: 100%;
-  margin-top: 1rem;
+  width: 65%;
+  margin-top: 2rem;
+  background-color: #3e4651;
+  border-radius: 0.2rem;
 }
 
 main {
@@ -35,11 +38,11 @@ main {
   justify-content: center;
 }
 .player1 {
-  color: #ff4a4a;
+  color: #30e2b6;
 }
 
 .player2 {
-  color: #319ffb;
+  color: #25aef3;
 }
 
 #robot {
@@ -50,7 +53,7 @@ main {
 
 #robot.active {
   opacity: 1;
-  color: #319ffb;
+  color: #25aef3;
 }
 
 #game {
@@ -70,7 +73,7 @@ main {
   height: 8rem;
   width: 8rem;
 
-  background-color: #ffffff;
+  background-color: #3e4651;
   color: #191919;
   font-size: 4rem;
   font-weight: 700;
@@ -138,16 +141,16 @@ main {
   transform: rotate(-45deg);
 }
 #strike-diagonal.player1 {
-  background-color: #ff4a4a;
+  background-color: #30e2b6;
 }
 #strike-diagonal.player2 {
-  background-color: #319ffb;
+  background-color: #25aef3;
 }
 #strike.player1 {
-  background-color: #ff4a4a;
+  background-color: #30e2b6;
 }
 #strike.player2 {
-  background-color: #319ffb;
+  background-color: #25aef3;
 }
 
 .options {
@@ -172,10 +175,10 @@ main {
 }
 
 #restart.player1 {
-  background-color: #ff4a4a;
+  background-color: #30e2b6;
 }
 #restart.player2 {
-  background-color: #319ffb;
+  background-color: #25aef3;
 }
 
 #restart:hover {

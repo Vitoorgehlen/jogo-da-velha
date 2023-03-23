@@ -1,7 +1,7 @@
 /* Git Flow
  Abrir o terminal (Crtl+J) e rodar esses comandos
  ! Entre cada comando: "git status"
- Depois 'git add'                       Adiciona os arquivos e mudanças na história
+ Depois 'git add .'                       Adiciona os arquivos e mudanças na história
  ! Se eu colocar 'git add .' eu adiciono tudo
  Depois 'git commit -m "Uma mensagem"'  Cria um ponto na história com a mensagem
  Depois 'git push'                      Publica no GitHub
