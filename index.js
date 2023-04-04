@@ -1,6 +1,7 @@
 /* Git Flow
  Abrir o terminal (Crtl+J) e rodar esses comandos
  ! Entre cada comando: "git status"
+ Começa com 'git init'   
  Depois 'git add .'                       Adiciona os arquivos e mudanças na história
  ! Se eu colocar 'git add .' eu adiciono tudo
  Depois 'git commit -m "Uma mensagem"'  Cria um ponto na história com a mensagem
@@ -31,7 +32,7 @@ let player1Wins = 0;
 let player2Wins = 0;
 let playerOnePiece = '<i class="player1 fa-solid fa-x"></i>';
 let playerTwoPiece = '<i class="player2 fa-solid fa-o"></i>';
-let isCPU = false;
+let isCPU = true;
 
 function placeOnBoard(index, element) {
   if (!isGameOver) {
@@ -214,9 +215,9 @@ resetButton.addEventListener("click", () => {
 robot.addEventListener("click", () => {
   isCPU = !isCPU;
   if (isCPU) {
-    robot.classList.add("active");
-  } else {
     robot.classList.remove("active");
+  } else {
+    robot.classList.add("active");
   }
   if (currentPlayer === 2) {
     robotMove();

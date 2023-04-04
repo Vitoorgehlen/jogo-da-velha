@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 
-  font-family: "Raleway", sans-serif;
+  font-family: "Press Start 2P", sans-serif;
 }
 
 body {
@@ -15,8 +15,8 @@ body {
 
   height: 100svh;
 
-  background-color: #1b1a1f;
-  color: #fcfcff;
+  background-color: #ffdddf;
+  color: #ff2895;
 }
 
 header {
@@ -27,7 +27,7 @@ header {
 
   width: 65%;
   margin-top: 2rem;
-  background-color: #3e4651;
+  background-color: #ffb7de;
   border-radius: 0.2rem;
 }
 
@@ -38,22 +38,22 @@ main {
   justify-content: center;
 }
 .player1 {
-  color: #30e2b6;
+  color: #df3cf0;
 }
 
 .player2 {
-  color: #25aef3;
+  color: #9720f1;
 }
 
 #robot {
   cursor: pointer;
-  opacity: 0.5;
-  transition: all 0.5s;
+  opacity: 1;
+  color: #9720f1;
+  transition: all 0.2s;
 }
 
 #robot.active {
-  opacity: 1;
-  color: #25aef3;
+  opacity: 0.2;
 }
 
 #game {
@@ -63,6 +63,7 @@ main {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
+  padding-top: 1rem;
 }
 
 .square {
@@ -73,7 +74,7 @@ main {
   height: 8rem;
   width: 8rem;
 
-  background-color: #3e4651;
+  background-color: #ffb7de;
   color: #191919;
   font-size: 4rem;
   font-weight: 700;
@@ -141,23 +142,23 @@ main {
   transform: rotate(-45deg);
 }
 #strike-diagonal.player1 {
-  background-color: #30e2b6;
+  background-color: #df3cf0;
 }
 #strike-diagonal.player2 {
-  background-color: #25aef3;
+  background-color: #9720f1;
 }
 #strike.player1 {
-  background-color: #30e2b6;
+  background-color: #df3cf0;
 }
 #strike.player2 {
-  background-color: #25aef3;
+  background-color: #9720f1;
 }
 
 .options {
   display: flex;
   align-items: center;
   gap: 1rem;
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 #restart {
   cursor: pointer;
@@ -175,10 +176,10 @@ main {
 }
 
 #restart.player1 {
-  background-color: #30e2b6;
+  background-color: #df3cf0;
 }
 #restart.player2 {
-  background-color: #25aef3;
+  background-color: #9720f1;
 }
 
 #restart:hover {
@@ -186,5 +187,6 @@ main {
 }
 
 footer {
+  padding-top: 2rem;
   margin-bottom: 1rem;
 }
