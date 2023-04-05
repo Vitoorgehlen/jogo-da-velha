@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 
-  font-family: "Press Start 2P", sans-serif;
+  font-family: "Signika Negative", sans-serif;
 }
 
 body {
@@ -15,8 +15,8 @@ body {
 
   height: 100svh;
 
-  background-color: #ffdddf;
-  color: #ff2895;
+  background-color: #1b1a1f;
+  color: #ffffff;
 }
 
 header {
@@ -27,7 +27,7 @@ header {
 
   width: 65%;
   margin-top: 2rem;
-  background-color: #ffb7de;
+  background-color: #000000;
   border-radius: 0.2rem;
 }
 
@@ -38,17 +38,17 @@ main {
   justify-content: center;
 }
 .player1 {
-  color: #df3cf0;
+  color: #ff2895;
 }
 
 .player2 {
-  color: #9720f1;
+  color: #7b0097;
 }
 
 #robot {
   cursor: pointer;
   opacity: 1;
-  color: #9720f1;
+  color: #7b0097;
   transition: all 0.2s;
 }
 
@@ -74,8 +74,8 @@ main {
   height: 8rem;
   width: 8rem;
 
-  background-color: #ffb7de;
-  color: #191919;
+  background-color: #3e4651;
+  box-shadow: 0 0 15px #00000055;
   font-size: 4rem;
   font-weight: 700;
 }
@@ -142,16 +142,16 @@ main {
   transform: rotate(-45deg);
 }
 #strike-diagonal.player1 {
-  background-color: #df3cf0;
+  background-color: #ff2895;
 }
 #strike-diagonal.player2 {
-  background-color: #9720f1;
+  background-color: #7b0097;
 }
 #strike.player1 {
-  background-color: #df3cf0;
+  background-color: #ff2895;
 }
 #strike.player2 {
-  background-color: #9720f1;
+  background-color: #7b0097;
 }
 
 .options {
@@ -176,14 +176,14 @@ main {
 }
 
 #restart.player1 {
-  background-color: #df3cf0;
+  background-color: #ff2895;
 }
 #restart.player2 {
-  background-color: #9720f1;
+  background-color: #7b0097;
 }
 
 #restart:hover {
-  filter: drop-shadow(0 0 0.5rem #000000);
+  filter: drop-shadow(0 0 0.5rem #00000033);
 }
 
 footer {
